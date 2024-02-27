@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Calculadora de Calorías</title>
+  <link rel="stylesheet" href="Style.css">
+</head>
+<body>
+  <div class="container">
+    <h1>Calculadora de Calorías</h1>
+    <div>
+      <label for="peso">Peso (kg):</label>
+      <input type="number" id="peso" min="1" required>
+    </div>
+    <div>
+      <label for="altura">Altura (cm):</label>
+      <input type="number" id="altura" min="1" required>
+    </div>
+    <div>
+      <label for="edad">Edad:</label>
+      <input type="number" id="edad" min="1" required>
+    </div>
+    <div>
+      <label for="actividad">Nivel de actividad:</label>
+      <select id="actividad">
+        <option value="1.2">Sedentario (poco o ningún ejercicio)</option>
+        <option value="1.375">Ligero (ejercicio ligero/actividad deportiva ligera 1-3 días/semana)</option>
+        <option value="1.55">Moderado (ejercicio moderado/actividad deportiva moderada 3-5 días/semana)</option>
+        <option value="1.725">Activo (ejercicio duro/actividad deportiva dura 6-7 días/semana)</option>
+        <option value="1.9">Muy activo (trabajo físico duro o ejercicio intenso y actividad deportiva muy intensa, ejercicio 2 veces al día)</option>
+      </select>
+    </div>
+    <button onclick="calcularCalorias()">Calcular</button>
+    <div id="resultado"></div>
+  </div>
+
+  <!-- Footer con tu nombre -->
+  <footer>
+    <p>© 2024 Joel Steven Pineda Rincon</p>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
